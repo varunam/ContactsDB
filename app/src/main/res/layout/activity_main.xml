@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/main_bg"
+    tools:context="app.contactsdbapplication.com.contactsdb.MainActivity">
+
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts Database"
+        android:textColor="#ffee"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/mainImageIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainTitle"/>
+
+    <LinearLayout
+        android:id="@+id/mainLinerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/whitebackground"
+        android:layout_below="@+id/mainTitle"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/mainName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,."
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/mainNumber"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp" />
+
+        <EditText
+            android:id="@+id/mainEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:digits="1234567890_.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mainSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/mainLinerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/showAllContacts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mainLinerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/mainSaveButton"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/contactss"/>
+
+
+
+</RelativeLayout>

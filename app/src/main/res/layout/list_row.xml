@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:background="@drawable/whitebackground"
+    android:layout_height="210dp"
+    android:padding="12dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/lrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT NAME"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/lrLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/contactss"
+        android:layout_below="@+id/lrName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/lrPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT PHONE NUMBER"
+        android:layout_below="@+id/lrLogo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/lrEmailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT EMAIL ID"
+        android:layout_below="@+id/lrPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
